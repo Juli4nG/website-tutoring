@@ -17,7 +17,7 @@ body.light {
 
 img {
   max-width: 500px;
-  border-radius: 15px;
+  border-radius: 8px;
 }
 
 ol {
@@ -72,10 +72,30 @@ nav ul li .button {
   margin: 0px;
 }
 
-.form {
+.form .filters {
   display: flex;
   flex-direction: column;
   max-width: 300px;
   margin: 0 auto;
   gap: 8px;
+}
+
+.form #list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.game_card {
+  border: solid white 1px;
+  border-radius: 8px;
+  padding-bottom: 15px;
+}
+
+.game_card .card_content {
+  padding: 0px 15px;
+}
+
+.form #list img {
+  max-width: 100%;
 }

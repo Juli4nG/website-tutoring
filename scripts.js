@@ -73,9 +73,19 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderGames(gamesToShow) {
     list.innerHTML = "";
     gamesToShow.forEach((game) => {
-      const li = document.createElement("li");
-      li.textContent = `${game.name} - ${game.genre}`;
-      list.appendChild(li);
+      const game_card = document.createElement("div");
+      game_card.classList.add("game_card");
+      game_card.innerHTML = `
+      <img src="${game.image}">
+      <div class="card_content">
+        <h2>${game.title}</h2>
+        <p>${game.description}</p>
+        <div>
+          <span>${game.genre}</span>
+          <span>${game.price}</span>
+        </div>
+      </div>`;
+      list.appendChild(game_card);
     });
   }
 

@@ -38,22 +38,24 @@
       <h3>The last 3 games I played were</h3>
 
       <form class="form" action="javascript:void(0);">
-        <label for="search">Search Game!</label>
-        <input
-          type="text"
-          name="search"
-          id="search"
-          placeholder="Game name here..."
-        />
-        <label for="genre">Choose a game genre:</label>
-        <select name="genre" id="genre-dropdown">
-          <option value="all">Show all games!</option>
-        </select>
+        <div class="filters">
+          <label for="search">Search Game!</label>
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Game name here..."
+          />
+          <label for="genre">Choose a game genre:</label>
+          <select name="genre" id="genre-dropdown">
+            <option value="all">Show all games!</option>
+          </select>
+        </div>
         <div>
           <button class="button" id="game-loader" type="submit">
             Load Games!
           </button>
-          <ol id="list"></ol>
+          <div id="list"></div>
         </div>
       </form>
 
