@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (query) {
       filteredGames = filteredGames.filter((game) =>
-        game.name.toLowerCase().includes(query),
+        game.title.toLowerCase().includes(query),
       );
     }
 
