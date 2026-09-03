@@ -20,6 +20,16 @@ img {
   border-radius: 8px;
 }
 
+@media (max-width: 480px) {
+  img {
+    max-width: 100%;
+  }
+
+  nav ul li:last-child {
+    display: none;
+  }
+}
+
 ol {
   max-width: 200px;
   margin: 1em auto;
