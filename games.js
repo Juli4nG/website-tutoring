@@ -217,7 +217,7 @@ const games = [
       "The world's game with realistic football action and Ultimate Team.",
     genre: "Sports",
     price: 69.99,
-    store: "Steam-new",
+    store: "Steam",
     appid: 4080220,
   },
   {

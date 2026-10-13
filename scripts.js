@@ -89,11 +89,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const isFavorite = favorites.includes(game.id);
 
-      const isSteam = game.store == "Steam";
-
-      const imgSrc = isSteam
-        ? `https://cdn.akamai.steamstatic.com/steam/apps/${game.appid}/header.jpg`
-        : game.image;
+      const imgSrc =
+        game.image ||
+        `https://cdn.akamai.steamstatic.com/steam/apps/${game.appid}/header.jpg`;
 
       game_card.innerHTML = `
       <img src="${imgSrc}">
