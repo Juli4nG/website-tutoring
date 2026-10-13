@@ -1,14 +1,15 @@
 // Game data. store says where you get each game.
 // Steam games have an appid, and their cover image is built from it:
 //   https://cdn.akamai.steamstatic.com/steam/apps/<appid>/header.jpg
-// Everything else has an image URL instead (picsum placeholders, same 460x215
-// size as Steam covers). price is in USD; 0 means free-to-play.
+// Everything else has an image URL instead, pointing at official art from the
+// game's own site or store. price is in USD; 0 means free-to-play.
 
 const games = [
   {
     id: 1,
     title: "League of Legends",
-    image: "https://picsum.photos/seed/league-of-legends/460/215",
+    image:
+      "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/565197caf987af4e4da307df6e2b235a28714736-837x469.jpg",
     description:
       "Team-based 5v5 MOBA where champions battle to destroy the enemy Nexus.",
     genre: "MOBA",
@@ -28,7 +29,8 @@ const games = [
   {
     id: 3,
     title: "Valorant",
-    image: "https://picsum.photos/seed/valorant/460/215",
+    image:
+      "https://store-images.s-microsoft.com/image/apps.20115.13898029070941789.8d58b251-455c-4993-a1fd-1d77e8261eaf.f10d3e2e-b88c-41c5-beea-305a2c530d8d?w=460",
     description:
       "5v5 tactical shooter blending precise gunplay with unique agent abilities.",
     genre: "Tactical Shooter",
@@ -68,7 +70,8 @@ const games = [
   {
     id: 7,
     title: "Fortnite",
-    image: "https://picsum.photos/seed/fortnite/460/215",
+    image:
+      "https://store-images.s-microsoft.com/image/apps.60143.70702278257994163.6d75301b-59c3-4a73-b70c-5901ae9cbb44.b4128829-0f4a-4974-8765-24aa73a79dc8?w=460",
     description:
       "Build, battle, and survive in one of the world's biggest battle royales.",
     genre: "Battle Royale",
@@ -78,7 +81,8 @@ const games = [
   {
     id: 8,
     title: "Minecraft",
-    image: "https://picsum.photos/seed/minecraft/460/215",
+    image:
+      "https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/key-art/About-Minecraft_Featured-Image-0_570x321.jpg",
     description:
       "Mine, craft, and build anything you can imagine in an infinite blocky world.",
     genre: "Sandbox",
@@ -187,7 +191,7 @@ const games = [
   {
     id: 19,
     title: "Fall Guys",
-    image: "https://picsum.photos/seed/fall-guys/460/215",
+    image: "https://cdn.akamai.steamstatic.com/steam/apps/1097150/header.jpg",
     description:
       "A chaotic, colorful battle royale of wobbly obstacle-course mayhem.",
     genre: "Party",
@@ -197,7 +201,7 @@ const games = [
   {
     id: 20,
     title: "Rocket League",
-    image: "https://picsum.photos/seed/rocket-league/460/215",
+    image: "https://cdn.akamai.steamstatic.com/steam/apps/252950/header.jpg",
     description: "High-octane soccer played with rocket-powered cars.",
     genre: "Sports",
     price: 0,
@@ -213,7 +217,7 @@ const games = [
       "The world's game with realistic football action and Ultimate Team.",
     genre: "Sports",
     price: 69.99,
-    store: "Steam",
+    store: "Steam-new",
     appid: 4080220,
   },
   {
@@ -229,7 +233,8 @@ const games = [
   {
     id: 23,
     title: "Clash Royale",
-    image: "https://picsum.photos/seed/clash-royale/460/215",
+    image:
+      "https://supercell.com/images/8654bffbaa77efb91243d3706b739c25/og_clashroyale.d235f90b.jpg",
     description: "A real-time tower-rush strategy game with collectible cards.",
     genre: "Mobile",
     price: 0,
@@ -238,7 +243,8 @@ const games = [
   {
     id: 24,
     title: "Clash of Clans",
-    image: "https://picsum.photos/seed/clash-of-clans/460/215",
+    image:
+      "https://supercell.com/images/4c0ab0c1fb2958e72103f81632fee096/og_clashofclans.f3149338.jpg",
     description:
       "Build your village, train troops, and raid in this mobile strategy classic.",
     genre: "Mobile",
@@ -248,7 +254,8 @@ const games = [
   {
     id: 25,
     title: "Genshin Impact",
-    image: "https://picsum.photos/seed/genshin-impact/460/215",
+    image:
+      "https://store-images.s-microsoft.com/image/apps.17228.14057893183113088.c7459eb1-fd61-4f8d-9636-e286ca6b3f52.1d31eb39-7b47-484a-b67e-735d2c63156a?w=460",
     description: "An open-world action RPG set in the fantasy realm of Teyvat.",
     genre: "Action RPG",
     price: 0,
@@ -267,7 +274,8 @@ const games = [
   {
     id: 27,
     title: "World of Warcraft",
-    image: "https://picsum.photos/seed/world-of-warcraft/460/215",
+    image:
+      "https://blz-contentstack-images.akamaized.net/v3/assets/blt9c12f249ac15c7ec/bltb5a24e5ab1e2cfb0/6a88e3589b942efdb6f74110/wow-thumbnail-homepage.jpg",
     description:
       "The legendary MMORPG set in the ever-evolving world of Azeroth.",
     genre: "MMORPG",
