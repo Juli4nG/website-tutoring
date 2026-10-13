@@ -90,6 +90,10 @@ nav ul li .button {
   gap: 8px;
 }
 
+.form .filters #price {
+  width: 100%;
+}
+
 .form #list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));

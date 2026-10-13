@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const loadBtn = document.querySelector("#game-loader");
 
   const dropdown = document.querySelector("#genre-dropdown");
+  const storeDropdown = document.querySelector("#store-dropdown");
 
   const favoritesOnly = document.querySelector("#favorites-only");
   favoritesOnly.addEventListener("change", applyFilters);
@@ -43,6 +44,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
   renderGenreOptions(games);
 
+  function renderStoreOptions(gamesList) {
+    const uniqueStores = new Array();
+
+    gamesList.forEach((game) => {
+      if (!uniqueStores.includes(game.store)) {
+        uniqueStores.push(game.store);
+      }
+    });
+
+    uniqueStores.sort();
+
+    uniqueStores.forEach((store) => {
+      const option = document.createElement("option");
+      option.value = store;
+      option.textContent = store;
+      storeDropdown.appendChild(option);
+    });
+  }
+
+  renderStoreOptions(games);
+
   const list = document.querySelector("#list");
 
   loadBtn.addEventListener("click", function () {
@@ -58,6 +80,12 @@ document.addEventListener("DOMContentLoaded", () => {
     if (dropdown.value !== "all") {
       filteredGames = filteredGames.filter(
         (game) => game.genre === dropdown.value,
+      );
+    }
+
+    if (storeDropdown.value !== "all") {
+      filteredGames = filteredGames.filter(
+        (game) => game.store === storeDropdown.value,
       );
     }
 

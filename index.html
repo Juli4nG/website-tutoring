@@ -48,10 +48,29 @@
             id="search"
             placeholder="Game name here..."
           />
+
           <label for="genre">Choose a game genre:</label>
           <select name="genre" id="genre-dropdown">
             <option value="all">Show all games!</option>
           </select>
+
+          <label for="store">Choose a game store:</label>
+          <select name="store" id="store-dropdown">
+            <option value="all">Any store!</option>
+          </select>
+
+          <div>
+            <label for="price" id="price-label">Price</label>
+            <input
+              name="price"
+              id="price"
+              type="range"
+              min="0"
+              max="70"
+              step="5"
+              value="0"
+            />
+          </div>
           <label for="favorites-only">
             <input type="checkbox" id="favorites-only" /> Only show my favorites
           </label>
