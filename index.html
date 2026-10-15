@@ -49,13 +49,13 @@
             placeholder="Game name here..."
           />
 
-          <label for="genre">Choose a game genre:</label>
-          <select name="genre" id="genre-dropdown">
+          <label for="genre-dropdown">Choose a game genre:</label>
+          <select name="genre-dropdown" id="genre-dropdown">
             <option value="all">Show all games!</option>
           </select>
 
-          <label for="store">Choose a game store:</label>
-          <select name="store" id="store-dropdown">
+          <label for="store-dropdown">Choose a game store:</label>
+          <select name="store-dropdown" id="store-dropdown">
             <option value="all">Any store!</option>
           </select>
 
@@ -80,6 +80,9 @@
         <div>
           <button class="button" id="game-loader" type="submit">
             Load Games!
+          </button>
+          <button class="button" id="random-game-loader" type="submit">
+            Surprise me!
           </button>
           <div id="list"></div>
         </div>
