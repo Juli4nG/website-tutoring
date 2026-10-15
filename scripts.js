@@ -120,7 +120,6 @@ document.addEventListener("DOMContentLoaded", () => {
   searchBox.addEventListener("input", applyFilters);
   dropdown.addEventListener("change", applyFilters);
   storeDropdown.addEventListener("change", applyFilters);
-  maxPrice.addEventListener("change", applyFilters);
 
   let favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
 
